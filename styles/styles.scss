@@ -1,0 +1,413 @@
+@import '../styles/abstracts/variables';
+@import '../styles/abstracts/mixin';
+
+@import '../styles/elements/banners';
+@import '../styles/elements/botones';
+@import '../styles/elements/footer';
+@import '../styles/elements/formulario';
+@import '../styles/elements/navbar';
+@import '../styles/elements/separadores';
+
+
+//  NAVBAR
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+  // HERO INDEX
+    .hero-index {
+    @include banner();
+    height: 100vh;
+    background-image: url(../images/fabrica-mariano.webp);
+    background-position: 75% center ;
+    align-items: center;
+    &:before {
+        @include banner__before();
+        background: linear-gradient($rojo 10%, rgba(255, 97, 76, 0.63), $rojo 90%);
+        }
+        &__titulo {
+            @include banner__titulo();
+            font-size: 1rem;
+                &--img {
+                    height: 10rem;
+                    padding-bottom: 1rem;
+                }
+                &--inferior{
+                @include banner__titulo--inferior();
+                }
+            }
+    }
+
+
+// CONTADOR SERVICIOS
+
+.separadorContador {
+    background-color: $rojo;
+    height: 80vh;
+    background-image: url(../images/incendioPacheco-vector-vertical.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contador {
+    font-family: $fuenteprincipal;
+    background-color: $negro;
+    &__titulo {
+
+        &--texto {    
+        color: $negro;
+        text-align: center;
+        display: inline;
+        background-color: tomato;
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        &--icono {
+            font-size: 3rem;
+            color: $rojo;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        &--numero {
+            color: white;
+            margin: 0rem;
+            font-size: 1.5rem;
+            font-weight: $bold
+            
+        }
+        &--tipo {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: $semi-bold
+        }
+    }
+}
+
+
+
+
+
+
+// VOLUNTARIOS
+
+.voluntarios {
+    margin: 3rem 0px;
+    &__titulo {
+        @include titulos-secciones();
+    }
+    &__parrafo {
+        @include parrafos-secciones();
+    }
+    &__quienes {
+        @include parrafos-secciones();
+    }
+}
+
+// BOTONES
+
+    .botones__secundario {
+        @include botonSecundario();
+            &:hover {
+                @include botones--hover;
+            }
+    }
+
+    .botones__principal {
+        @include botonPrincipal();
+        &:hover {
+            @include botones--hover;
+                }
+        }
+
+        .botones__noticias {
+            @include botonSeguirLeyendo();
+            &:hover {
+                @include botones--hover;
+            }
+        }
+
+        .botonAtrasNoticias {
+            color: $rojo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+
+
+/// ULTIMAS NOTICIAS
+
+.ultimasNoticias {
+    @include titulos-secciones();
+    background-color: $amarillo;
+}
+
+/// IMAGENES DE LAS TARJETAS
+.cardNoticias {
+    @include cardsNoticias();
+    &:before {
+        @include cardsNoticias__before();
+    }
+
+    &__titulo {
+        @include cardsNoticias__titulo();
+    }
+}
+
+
+
+
+
+
+
+
+/////// FORMATO GENERAL DE LAS NOTICIAS
+
+.nota {
+    &__imagenPrincipal {
+        margin: 1rem 0rem;
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__imagenSecundaria {
+        margin-top: 3rem;
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__titulo {
+        @include titulos-secciones;
+        margin-top: 0rem;
+    }
+    &__fecha {
+        font-size: 0.8rem;
+        color: $rojo;
+        font-weight: $bold;
+        text-align: end;
+        margin-top: 1rem;
+    }
+    &__subtitulo {
+        font-size: 1rem;
+        font-weight: $medium;
+        text-align: left;
+    }
+}
+
+
+/////// FORMATO GENERAL DE LOS ARTICULOS
+
+.articulo {
+    &__titulo {
+        @include titulos-secciones;
+        margin-bottom: 1.5rem
+    }
+    &__parrafo {
+        @include parrafos-secciones;
+        margin-top: 1rem;
+        &--resaltado {
+            @include parrafos-secciones;
+            background: $amarillo;
+            color: $negro;
+            font-weight: $bold;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 500px
+            
+        }
+    }
+}
+
+.articuloInvertido {
+    background-color: $negro;
+    &__titulo {
+        @include titulos-secciones;
+        margin-bottom: 1.5rem;
+        color: white
+    }
+    &__parrafo {
+        @include parrafos-secciones;
+        margin-top: 1rem;
+        color: white;
+        &--resaltado {
+            @include parrafos-secciones;
+            background: $amarillo;
+            text-align: center;
+            color: white;
+            font-weight: $bold;
+            margin-bottom: 500px
+        }
+    }
+}
+
+
+
+////// SEPARADORES
+
+////// -----------INDEX------------
+.parallaxVoluntarios{
+    @include efectoParallax();
+    background-image: url(../images/constituyentes-M65.webp);
+}
+
+////// -----------QUIERO SER BOMBERO------------
+.separadorIngreso {
+    @include efectoParallax;
+    height: 30vh;
+    background-image: url(../images/rio-grupal.webp)
+}
+
+
+////// -----------SOBRE NOSOTROS------------
+.parallaxNosotros {
+    @include efectoParallax();
+    background-image: url(../images/jumbo-facutoth.webp) ;
+}
+
+///// SOBRE NOSOTROS
+///// LA IMAGEND DE LAS TARJETAS SE MODIFICA DESDE EL HTML
+
+.cardNosotros {
+    &__Imagen {
+        min-height: 30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 20%;
+        margin: 1rem;
+    }
+
+    &__Texto {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: $semi-bold;
+        font-size: 1rem;
+    }
+}
+
+///// QUIERO SER BOMBERO
+
+.ingresoCard {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    &__titulo {
+        @include titulos-secciones;
+        font-size: 1.5rem;
+        text-align: center;
+    }   
+    &__subtitulo {
+    text-align: center;
+    }
+    &__parrafo {
+        @include parrafos-secciones;
+        text-align: center;
+    }
+    &__imagen {
+        max-width: 50%;
+        color: white;
+        margin-bottom: 2rem;
+    }
+    &__lista {
+        @include parrafos-secciones;
+        list-style: none;
+        font-weight: $medium;
+        text-align: left;
+        margin-top: 1rem;
+    }
+}
+
+
+
+/// MEDIA QUERIES
+
+// SMALL
+    @media (max-width: 767px) {
+    .sobreNosotros-lg {
+        display: none;
+    }
+    .parallaxNosotros {
+        height: 40vh;
+    }
+}
+
+// MEDIA MEDIUM + LANDSCAPE
+    @media (min-width: 768px) and (orientation: landscape) { 
+    .formulario {
+        max-width: 70%;
+        border-radius: 10px;
+    }
+}
+
+
+// MEDIUM
+@media (min-width: 768px) {
+    .separadorContador {
+        background-image: url(../images/incendiopachecohorizontal.png);
+        }
+    .parallaxVoluntarios {
+    height: 70vh
+    }
+    .bannerPages__titulo {
+        font-size: 4rem;
+    }
+    .parallaxNosotros {
+        height: 60vh;
+    }
+}
+
+
+// LARGE
+@media (min-width: 768px) {
+    .ingresoCard__imagen {
+        max-width: 20rem;
+    }
+    .separadorIngreso {
+        height: 50vh;
+    }
+    .ingresoCard{
+        margin: 5% 20%
+    }
+    .separadorNosotros {
+        height: 50vh;
+    }
+    .hero-index__titulo--superior{
+    font-size: 2rem;
+    }
+    .parallaxNosotros {
+        height: 50vh;
+    }
+    .sobreNosotros-sm {
+        display: none;
+    }
+    .formulario {
+        max-width: 60%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
