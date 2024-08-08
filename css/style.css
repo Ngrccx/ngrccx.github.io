@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.gothic {
+    font-family: nickel-gothic-variable, sans-serif;
+    
+}
+
+body {
+    background-image: url(../images/space.jpg);
+    background-color: rgba(20, 20, 20, 0.60);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.header {
+    height: 100vh;
+}
+
+.header__text {
+    width: 50%;
+}
+
+.action {
+    width: auto;
+    background-color: transparent;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    border: solid;
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+}
+
+
+.title {
+    color: whitesmoke;
+    font-family: nickel-gothic-variable, sans-serif;
+    font-variation-settings: "slnt" -15, "wdth" 125;
+    font-kerning: none;
+    letter-spacing:0.09em
+}
+
+.subtitle {
+    color: whitesmoke;
+    padding: 3% 0px;
+    font-size: 1.3rem;
+}
+
+.header__img {
+    min-width: 50%;
+    filter: invert();
+}
+
+.header__img--logo {
+    width: 80%;
+    fill: aqua;
+}
+
+/*MAIN*/
+
+.featuresSection {
+
+    background-color: rgb(30, 30, 30);
+
+}
+
+.features {
+    padding: 0% 10% 5%;
+    background-color: rgb(30, 30, 30);
+
+}
+
+.featuresTitle {
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 5% 0px 0%;
+    font-weight: bold;
+}
+
+
+.features__feature {
+    color: whitesmoke;
+    max-width: 60%;
+    padding: 5% 0px 0px;
+    font-size: 1rem;
+}
+
+
+.features__feature--img {
+    height: 10vh;
+    padding: 5% 0px;
+    filter: invert();
+    min-height: 100px;
+}
+
+.features__feature--title {
+    padding: 3% 0px;
+    font-size: 1.3rem;
+}
+
+.features__feature--text {
+    padding: 3% 0px;
+}
+
+
+
+.nosotros {
+    background-color: whitesmoke;
+    padding: 10%;
+}
+
+.nosotros__title {
+    padding-bottom: 5%;
+    font-size: 2rem;
+}
+
+.nosotros__text {
+    padding-bottom: 3%;
+    font-size: 1.5rem;
+}
+
+.reviews {
+    padding: 5% 0px;
+    background-color: whitesmoke;
+}
+
+.reviews__review {
+    padding: 2.5% 0px;
+    max-width: 50vw;
+}
+
+.reviews__review--dot {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.img1 {
+    background-image: url(../images/marce.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.img2 {
+    background-image: url(../images/chris.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(../images/carlos.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.reviews__review--text {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.gray {
+    transition: filter 0.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.gray:hover {
+    filter: grayscale(0%);
+}
+
+.artwork {
+    background-color: rgb(30, 30, 30);
+}
+
+.artworkTitle {
+    font-family: nickel-gothic-variable, sans-serif;
+    color: antiquewhite;
+    padding: 5% 0px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.artwork1 {
+    height: 50vh;
+    width: 40vw;
+    margin: 2%
+}
+
+.artwork2 {
+    height: 90vh;
+    width: 45vw;
+    margin: 2%
+}
+
+.art1 {
+    background-image: url(../images/juliette_recamier_Atlanta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+
+.art2 {
+    background-image: url(../images/Gagarin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+.art3 {
+    background-image: url(../images/Vader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+.art4 {
+    background-image: url(../images/illus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+.art5 {
+    background-image: url(../images/foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+footer {
+    height: auto;
+}
+
+.footerGap {
+    height: 20vh;
+    background-image: url(../images/space.jpg);
+}
+
+
+.footerMain {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.footerMain__title {
+    font-family: nickel-gothic-variable, sans-serif;
+    color: antiquewhite;
+    padding: 5% 0px;
+    font-size: 2rem;
+}
+
+.footerMain__text {
+    
+    color: antiquewhite;
+    max-width: 50%;
+    padding-bottom: 5%;
+}
+
+
+.footerSocial {
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    min-height: 5vh;
+}
+
+.link {
+    padding: 2% 1%;
+}
+
+.footerSocial--media{
+    filter: invert(100%);
+    height: 1.5rem;
+
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .header {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+     }
+}
