@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(../images/space.jpg);
+    background-image: url(../images/space.webp);
     background-color: rgba(20, 20, 20, 0.60);
     background-attachment: fixed;
     background-position: center;
@@ -143,7 +143,7 @@ body {
 }
 
 .img1 {
-    background-image: url(../images/marce.jpeg);
+    background-image: url(../images/marce.webp);
     background-position: center;
     background-size: cover;
 }
@@ -151,13 +151,13 @@ body {
 
 
 .img2 {
-    background-image: url(../images/chris.jpeg);
+    background-image: url(../images/chris.webp);
     background-position: center;
     background-size: cover;
 }
 
 .img3 {
-    background-image: url(../images/carlos.jpeg);
+    background-image: url(../images/carlos.webp);
     background-position: center;
     background-size: cover;
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .art1 {
-    background-image: url(../images/juliette_recamier_Atlanta.jpg);
+    background-image: url(../images/juliette_recamier_Atlanta.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 35%;
@@ -210,28 +210,28 @@ body {
 
 
 .art2 {
-    background-image: url(../images/Gagarin.jpg);
+    background-image: url(../images/Gagarin.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 .art3 {
-    background-image: url(../images/Vader.jpg);
+    background-image: url(../images/Vader.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 .art4 {
-    background-image: url(../images/illus.jpg);
+    background-image: url(../images/illus.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 .art5 {
-    background-image: url(../images/foto.jpg);
+    background-image: url(../images/foto.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 35%;
@@ -243,7 +243,7 @@ footer {
 
 .footerGap {
     height: 20vh;
-    background-image: url(../images/space.jpg);
+    background-image: url(../images/space.webp);
 }
 
 
